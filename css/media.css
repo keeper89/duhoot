@@ -1,0 +1,85 @@
+@media (max-width: 959px) {
+  .du-header {
+    background: #ffffff;
+  }
+  .du-menu-toggle {
+    background: #172b37;
+    width: 74px;
+    height: 74px;
+    font-size: 24px;
+    line-height: 74px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
+  .du-menu,
+  .du-menu-overlay {
+    position: fixed;
+    top: 74px;
+    bottom: 0;
+    -webkit-transition: -webkit-transform 0.4s, right 0.4s;
+    -moz-transition: -moztransform 0.4s, right 0.4s;
+    transition: transform .4s, right .4s;
+  }
+  .du-menu {
+    right: 0;
+    width: 293px;
+    background: #172b37;
+    z-index: 999;
+    padding: 20px;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  .du-menu li {
+    float: none;
+  }
+  .du-menu a {
+    line-height: 1.3;
+    height: auto;
+    padding: 0 0 20px 0;
+  }
+  .du-menu-overlay {
+    right: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 998;
+  }
+  .du-menu-open {
+    overflow: hidden;
+  }
+  .du-menu-open .du-menu,
+  .du-menu-open .du-menu-overlay {
+    display: block;
+  }
+  .du-menu-open .du-menu {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .du-menu-open .du-menu-overlay {
+    right: 293px;
+  }
+  .du-login {
+    margin-right: -20px;
+  }
+  .du-filter-row {
+    padding: 10px 0;
+  }
+  .du-filter-row .du-filter-item,
+  .du-filter-row .du-filter-type,
+  .du-filter-row .du-filter-location {
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+  }
+  .du-filter-row select,
+  .du-filter-row label {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 960px) {
+  .du-menu-toggle {
+    display: none;
+  }
+}
